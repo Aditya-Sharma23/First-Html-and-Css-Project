@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aditya Sharma — Portfolio</title>
+  <meta name="description" content="Portfolio site — projects, about, skills and contact." />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="logo">AS</div>
+      <div>
+        <div class="name">Aditya Sharma</div>
+        <div class="tagline">College Student & Cybersecurity Beginner</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="#contact">Hire me</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="intro">
+        <h1>Hi, I'm Aditya Sharma.</h1>
+        <p>I'm a cybersecurity beginner figuring out my speciality while improving my skills every day.</p>
+        <div class="cta-row">
+          <a class="btn cta" href="#projects">See my achievements</a>
+          <a class="btn btn-outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <aside class="profile">
+        <div class="avatar">AS</div>
+        <div class="meta">
+          <div class="name">Aditya Sharma</div>
+          <p class="small">Based in Jaipur, India — Learning, improving, exploring.</p>
+        </div>
+        <div class="card stats">
+          <div class="stat"><strong>0+</strong><span class="small">Years experience</span></div>
+          <div class="stat"><strong>2+</strong><span class="small">Projects shipped</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="card">
+        <h3>About Me</h3>
+        <p>I’m a student exploring the world of cybersecurity and tech. I enjoy learning new tools, solving challenges, and participating in CTFs and hackathons.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Selected Achievements</h2>
+      <div class="project-grid">
+
+        <article class="project">
+          <div class="thumb">Achievement 1</div>
+          <div class="p-body">
+            <h3>Linux & Python Practice</h3>
+            <p class="small">Hands-on work with Linux environments and Python automation.</p>
+            <div class="tags">
+              <span class="tag">LINUX</span>
+              <span class="tag">PYTHON</span>
+              <span class="tag">Performance</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="thumb">Achievement 2</div>
+          <div class="p-body">
+            <h3>PicoCTF — 10 Challenges</h3>
+            <p class="small">Completed 10 challenges in 2 days.</p>
+            <div class="tags">
+              <span class="tag">Terminal</span>
+              <span class="tag">Web Exploitation</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Languages</h3>
+          <p class="small">HTML, CSS, JavaScript, C, Python</p>
+        </div>
+        <div class="card">
+          <h3>Linux</h3>
+          <p class="small">Kali & Ubuntu</p>
+        </div>
+        <div class="card">
+          <h3>What I Like</h3>
+          <p class="small">PC gaming, Anime, Tech videos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+
+        <div class="card">
+          <h3>Let's Talk</h3>
+          <p class="small">Interested in collaborating? Send a message and I’ll reply soon.</p>
+          <div style="margin-top:12px">
+            <p class="small"><strong>Email</strong><br>adityasharma00547@gmail.com</p>
+            <p class="small"><strong>Location</strong><br>Rajasthan, India</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <form action="mailto:2006shashanktiwari@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="you@domain.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+
+            <button class="btn cta" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Aditya Sharma — Built with HTML/CSS
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
